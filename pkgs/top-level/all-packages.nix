@@ -30459,6 +30459,8 @@ with pkgs;
 
   furtherance = callPackage ../applications/misc/furtherance { };
 
+  galapix = callPackage ../applications/graphics/galapix { };
+
   gigalixir = callPackage ../tools/misc/gigalixir { };
 
   go-libp2p-daemon = callPackage ../servers/go-libp2p-daemon { };
