@@ -11,14 +11,14 @@
   xcftools,
   unzip,
 }:
-stdenv.mkDerivation rec {
+stdenv.mkDerivation (finalAttrs: {
   pname = "galapix";
   version = "0.2.1";
 
   src = fetchFromGitLab {
-    owner = pname;
-    repo = pname;
-    rev = "v${version}";
+    owner = finalAttrs.pname;
+    repo = finalAttrs.pname;
+    rev = "v${finalAttrs.version}";
     sha256 = "sha256-76F5d+A8yeFqL4FEcAy3SRRUWyYIBId6tgkB17sROjM=";
   };
 
@@ -54,4 +54,4 @@ stdenv.mkDerivation rec {
     maintainers = with maintainers; [ mib ];
     platforms = lib.platforms.linux;
   };
-}
+})
