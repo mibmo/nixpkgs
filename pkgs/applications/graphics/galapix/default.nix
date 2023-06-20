@@ -19,7 +19,7 @@ stdenv.mkDerivation (finalAttrs: {
     owner = finalAttrs.pname;
     repo = finalAttrs.pname;
     rev = "v${finalAttrs.version}";
-    sha256 = "sha256-76F5d+A8yeFqL4FEcAy3SRRUWyYIBId6tgkB17sROjM=";
+    hash = "sha256-76F5d+A8yeFqL4FEcAy3SRRUWyYIBId6tgkB17sROjM=";
   };
 
   sconsFlags = [
