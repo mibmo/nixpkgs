@@ -5363,6 +5363,8 @@ with pkgs;
 
   gladtex = callPackage ../tools/typesetting/tex/gladtex { };
 
+  klatexformula = libsForQt5.callPackage ../tools/typesetting/klatexformula { };
+
   latex2mathml = with python3Packages; toPythonApplication latex2mathml;
 
   latexrun = callPackage ../tools/typesetting/tex/latexrun { };
