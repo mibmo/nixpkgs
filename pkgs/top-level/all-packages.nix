@@ -24491,6 +24491,8 @@ with pkgs;
     abseil-cpp = abseil-cpp_202103;
   };
 
+  protobuf3_1 = callPackage ../development/libraries/protobuf/3.1.nix { };
+
   protobuf3_20 = callPackage ../development/libraries/protobuf/3.20.nix {
     abseil-cpp = abseil-cpp_202103;
   };
