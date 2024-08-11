@@ -29185,6 +29185,8 @@ with pkgs;
 
   blender-hip = blender.override { hipSupport = true; };
 
+  blenderExtensions = callPackage ../applications/misc/blender/extensions { };
+
   blflash = callPackage ../tools/misc/blflash { };
 
   blogc = callPackage ../applications/misc/blogc { };
