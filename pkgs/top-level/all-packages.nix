@@ -15982,6 +15982,11 @@ with pkgs;
     inherit (darwin.apple_sdk.frameworks) CoreData IOKit PCSC;
   };
 
+  haveno = callPackage ../by-name/ha/haveno/package.nix {
+    gradle = gradle_8;
+    jre = jre21_minimal;
+  };
+
   monero-gui = libsForQt5.callPackage ../applications/blockchains/monero-gui { };
 
   napari = with python3Packages; toPythonApplication napari;
