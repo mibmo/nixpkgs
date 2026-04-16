@@ -20,6 +20,7 @@ python3Packages.buildPythonApplication (finalAttrs: {
 
   patches = [
     ./patches/ensure-the-default-config-file-is-writable.patch
+    ./patches/fix-qobuz-login.patch
   ];
 
   nativeBuildInputs = with python3Packages; [
@@ -39,6 +40,7 @@ python3Packages.buildPythonApplication (finalAttrs: {
     mutagen
     pathvalidate
     pillow
+    playwright
     pycryptodomex
     pytest-asyncio
     pytest-mock
